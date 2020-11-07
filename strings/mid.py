@@ -2,8 +2,8 @@ import math
 
 
 def mid(s):
-    m = math.floor(len(s) / 2) - 1
-    return s[m: m + 2]
+    m = int(math.floor(len(s) / 2) - 1)
+    return s[m: m + 3]
 
 
 print(mid('JaSonAy'))
