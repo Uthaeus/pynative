@@ -1,12 +1,12 @@
 
 
 def tups(arr1, arr2):
-    result = []
+    result = set()
     x = 0
 
     while x < len(arr1):
         temp = (arr1[x], arr2[x])
-        result.append(temp)
+        result.add(temp)
         x += 1
 
     return result 
