@@ -12,6 +12,7 @@ def combine(a1, a2):
         else:
             if a2[x]:
                 evens.append(a2[x])
+        x += 1
 
     return odds + evens 
 
