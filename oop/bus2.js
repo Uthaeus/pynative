@@ -7,19 +7,20 @@ class Vehicle {
         this.mileage = mileage;
     }
 
-    seating_capacity = (capacity) => {
+    seating_capacity(capacity) {
         return `The seating capacity of a ${this.name} is ${capacity} passengers`;
     }
 }
 
 class Bus extends Vehicle {
+
     constructor(name, max_speed, mileage, capacity = 50) {
         super(name, max_speed, mileage);
         this.capacity = capacity;
     }
 
     seating_capacity() {
-        super.seating_capacity(this.capacity);
+        return super.seating_capacity(this.capacity);
     }
 }
 
